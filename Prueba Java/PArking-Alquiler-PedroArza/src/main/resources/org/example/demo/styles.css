@@ -1,0 +1,8 @@
+.my-button{
+    -fx-background-color: blue; /*Color de fondo del boton*/
+    -fx-text-fill:white; /*Color del texto*/
+}
+
+.my-button:hover{
+    -fx-background-color: green; /*Color de fondo al pasar el mouse*/
+}

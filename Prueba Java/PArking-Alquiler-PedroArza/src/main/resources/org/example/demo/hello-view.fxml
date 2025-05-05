@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="480.0" maxWidth="640.0" minHeight="480.0" minWidth="640.0" prefHeight="480.0" prefWidth="640.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <HBox alignment="TOP_CENTER" disable="true" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="INSERTE PERSONA" textAlignment="JUSTIFY" textFill="#4a342a">
+               <font>
+                  <Font name="Bauhaus 93" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox fx:id="nameHbox" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="nemLabel" text="Nombre">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="nameTexField" promptText="Inserte Nombre" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="surnameLabel" text="Apellidos">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="surenameTexFile" promptText="Inserte Apellidos" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="edadLabel" text="Edad">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="edadTextFiled" promptText="Inserte Edad" />
+         </children>
+      </HBox>
+      <HBox fx:id="nameHbox1" layoutX="30.0" layoutY="312.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="emailLabel" text="Email">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="emailTexField" promptText="Inserte Email" />
+         </children>
+      </HBox>
+      <HBox fx:id="nameHbox11" layoutX="30.0" layoutY="612.0" prefHeight="46.0" prefWidth="1160.0">
+         <children>
+            <Label fx:id="fonoLabel" text="Telefono">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="fonoTexField" promptText="Inserte Telefono" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="1160.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onSaveBotton" styleClass="my-button" stylesheets="@styles.css" text="Guardar" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onclouseBoutton" style="-fx-background-color: #cf4002;" text="Cerrar" textFill="WHITE" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
