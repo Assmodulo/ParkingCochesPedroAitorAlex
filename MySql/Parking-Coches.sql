@@ -1,7 +1,15 @@
 -- Creación de la base de datos
-DROP DATABASE ParkingAlquiler;
+DROP DATABASE if exists ParkingAlquiler;
 CREATE DATABASE ParkingAlquiler;
 USE ParkingAlquiler;
+
+-- creo el usuario mediante el cual vamos a realizar las operaciones de sql desde java
+
+drop user developer@localhost;
+
+create user developer@localhost identified by '1234';
+
+grant all privileges on ParkingAlquiler.* to developer@localhost;
 
 -- Tabla para los parkings
 CREATE TABLE Parkings (
@@ -65,7 +73,7 @@ CREATE TABLE Reservas (
     vehiculo_id INT NOT NULL,
     parking_id INT NOT NULL,
     fecha_inicio DATETIME NOT NULL,
-    fecha_fin DATETIME NOT NULL,
+    fecha_fin DATETIME DEFAULT NULL,
     estado VARCHAR(20) CHECK (estado IN ('pendiente', 'confirmada', 'en_curso', 'finalizada', 'cancelada')),
     costo_total DECIMAL(10, 2) NOT NULL,
     metodo_pago VARCHAR(50),
