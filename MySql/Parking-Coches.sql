@@ -74,6 +74,7 @@ CREATE TABLE Clientes (
     ciudad VARCHAR(50),
     codigo_postal VARCHAR(10),
     fecha_registro DATETIME DEFAULT CURRENT_TIMESTAMP,
+    permiso_valido BOOLEAN NOT NULL DEFAULT TRUE,
     activo BOOLEAN DEFAULT TRUE
 );
 
