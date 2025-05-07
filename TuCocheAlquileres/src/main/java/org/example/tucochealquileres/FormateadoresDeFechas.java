@@ -2,6 +2,7 @@ package org.example.tucochealquileres;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 /**
@@ -18,6 +19,7 @@ public class FormateadoresDeFechas {
     public static DateTimeFormatter formatoFechaSQL = DateTimeFormatter.ofPattern("yyyy-MM-dd");
     public static DateTimeFormatter formatoFechaHora = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
     public static DateTimeFormatter formatoFechaHoraSQL = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    public static DateTimeFormatter formatoHoraJavaSQL = DateTimeFormatter.ofPattern("HH:mm:ss");
 
     /**
      * Método que sirve para convertir un objeto de tipo LocalDate a un formato String adecuado para Java
@@ -53,5 +55,15 @@ public class FormateadoresDeFechas {
      */
     public static String formatearFechaHoraSQL(LocalDateTime date){
         return formatoFechaHoraSQL.format(date);
+    }
+
+    /**
+     * Método que nos sirve para convertir un objeto LocalTime de java en un String apto para java y para
+     * un dato de tipo Time de MySQL
+     * @param time un objeto de tipo time
+     * @return un string válido tanto en java como en MySql
+     */
+    public static String formatearHora(LocalTime time){
+        return formatoHoraJavaSQL.format(time);
     }
 }
