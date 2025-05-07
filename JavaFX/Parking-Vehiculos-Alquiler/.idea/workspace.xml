@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7cfd2c0e-c1e3-4ab0-ad3e-2266bbac8d85" name="Changes" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/.idea/Prueba Java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/main/java/org/example/demo/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/main/java/org/example/demo/MainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/main/resources/org/example/demo/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/main/resources/org/example/demo/styles.css" beforeDir="false" />
+>>>>>>> cc40773085a03f967a6c791569b17f36cb8041a2
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2wlAytma2LcmdHNZ59zOi4rlNfp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+<<<<<<< HEAD
+    "last_opened_file_path": "C:/Users/daw1.COMPU-S033/Documents/ParkingCochesPedroAitorAlex/JavaFX/Parking-Vehiculos-Alquiler",
+=======
+    "last_opened_file_path": "C:/Users/daw1.COMPU-S026/Documents/Daw1/TrabajoIntermodular/JavaFX/Parking-Vehiculos-Alquiler",
+>>>>>>> cc40773085a03f967a6c791569b17f36cb8041a2
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7cfd2c0e-c1e3-4ab0-ad3e-2266bbac8d85" name="Changes" comment="" />
+      <created>1746606044342</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746606044342</updated>
+<<<<<<< HEAD
+      <workItem from="1746606045429" duration="233000" />
+      <workItem from="1746608310898" duration="548000" />
+=======
+      <workItem from="1746606045429" duration="841000" />
+      <workItem from="1746608337061" duration="289000" />
+>>>>>>> cc40773085a03f967a6c791569b17f36cb8041a2
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
