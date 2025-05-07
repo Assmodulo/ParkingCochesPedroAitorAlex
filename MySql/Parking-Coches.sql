@@ -26,12 +26,11 @@ CREATE TABLE Parkings (
     nombre VARCHAR(50) NOT NULL,
     direccion VARCHAR(100) NOT NULL,
     ciudad VARCHAR(50) NOT NULL,
-    codigo_postal VARCHAR(10) NOT NULL,
+    codigo_postal CHAR(5) NOT NULL,
     capacidad_total INT NOT NULL,
     plazas_disponibles INT NOT NULL,
     hora_apertura TIME NOT NULL,
     hora_cierre TIME NOT NULL,
-    tarifa_hora DECIMAL(10, 2) NOT NULL,
     fecha_registro DATETIME DEFAULT CURRENT_TIMESTAMP,
     activo BOOLEAN DEFAULT TRUE
 );
@@ -39,7 +38,7 @@ CREATE TABLE Parkings (
 -- Tabla para los tipos de vehículos
 CREATE TABLE TiposVehiculos (
     tipo_id INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(50) NOT NULL,
+    tipo enum('Compacto','Berlina','SUV','Todoterreno','Camioneta'),
     descripcion VARCHAR(100),
     tarifa DECIMAL(10, 2) DEFAULT 0.00
 );
@@ -52,7 +51,7 @@ CREATE TABLE Vehiculos (
     modelo VARCHAR(50) NOT NULL,
     color VARCHAR(30) NOT NULL,
     tipo_id INT NOT NULL,
-    estado VARCHAR(20) CHECK (estado IN ('disponible', 'alquilado', 'mantenimiento', 'baja')),
+    estado enum ('Disponible', 'Alquilado', 'Mantenimiento', 'Baja') DEFAULT 'Disponible',
     fecha_adquisicion DATE NOT NULL,
     parking_id INT NOT NULL,
     -- fecha_ultima_revision DATE,
@@ -86,7 +85,7 @@ CREATE TABLE Reservas (
     parking_id INT NOT NULL,
     fecha_inicio DATETIME NOT NULL,
     fecha_fin DATETIME DEFAULT NULL,
-    estado VARCHAR(20) CHECK (estado IN ('pendiente', 'confirmada', 'en_curso', 'finalizada', 'cancelada')),
+    estado enum ('Pendiente', 'Confirmada', 'En curso', 'Finalizada', 'Cancelada'),
     costo_total DECIMAL(10, 2) NOT NULL,
     -- metodo_pago VARCHAR(50),
     -- notas TEXT,
