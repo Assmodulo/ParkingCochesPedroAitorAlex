@@ -3,6 +3,13 @@ DROP DATABASE if exists ParkingAlquiler;
 CREATE DATABASE ParkingAlquiler;
 USE ParkingAlquiler;
 
+drop table if exists Parkings,
+					 TiposVehiculos,
+                     Vehiculos,
+                     Clientes,
+                     Reservas,
+                     Empleados;
+
 -- creo el usuario mediante el cual vamos a realizar las operaciones de sql desde java
 
 drop user developer@localhost;
@@ -12,6 +19,8 @@ create user developer@localhost identified by '1234';
 grant all privileges on ParkingAlquiler.* to developer@localhost;
 
 -- Tabla para los parkings
+-- Por ahora la primary es un int, pero quizá luego sea mejor cambiar a un String
+
 CREATE TABLE Parkings (
     parking_id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(100) NOT NULL,
@@ -45,9 +54,11 @@ CREATE TABLE Vehiculos (
     tipo_id INT NOT NULL,
     estado VARCHAR(20) CHECK (estado IN ('disponible', 'alquilado', 'mantenimiento', 'baja')),
     fecha_adquisicion DATE NOT NULL,
+    parking_id INT NOT NULL,
     -- fecha_ultima_revision DATE,
     -- kilometraje INT NOT NULL,
-    FOREIGN KEY (tipo_id) REFERENCES TiposVehiculos(tipo_id)
+    FOREIGN KEY (tipo_id) REFERENCES TiposVehiculos(tipo_id),
+    FOREIGN KEY (parking_id) REFERENCES Parkings(parking_id)
 );
 
 -- Tabla para los clientes
@@ -56,6 +67,7 @@ CREATE TABLE Clientes (
     nombre VARCHAR(50) NOT NULL,
     apellidos VARCHAR(100) NOT NULL,
     dni VARCHAR(20) UNIQUE NOT NULL,
+    f_nacimiento DATE NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
     telefono VARCHAR(20) NOT NULL,
     direccion VARCHAR(200),
