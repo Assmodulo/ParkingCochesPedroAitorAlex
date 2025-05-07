@@ -11,10 +11,8 @@ public class Vehiculos {
     LocalDate añoDeFabricacion;
     String estado;
     LocalDate fechaDeAdquisicion;
-    LocalDate fechaUltimaRevision;
-    int kilometraje;
 
-    public Vehiculos(String matricula, String marca, String modelo, String color, LocalDate añoDeFabricacion, String estado, LocalDate fechaDeAdquisicion, LocalDate fechaUltimaRevision, int kilometraje) {
+    public Vehiculos(String matricula, String marca, String modelo, String color, LocalDate añoDeFabricacion, String estado, LocalDate fechaDeAdquisicion) {
         this.matricula = matricula;
         this.marca = marca;
         this.modelo = modelo;
@@ -22,8 +20,6 @@ public class Vehiculos {
         this.añoDeFabricacion = añoDeFabricacion;
         this.estado = estado;
         this.fechaDeAdquisicion = fechaDeAdquisicion;
-        this.fechaUltimaRevision = fechaUltimaRevision;
-        this.kilometraje = kilometraje;
     }
 
     public String getMatricula() {
@@ -82,22 +78,6 @@ public class Vehiculos {
         this.fechaDeAdquisicion = fechaDeAdquisicion;
     }
 
-    public LocalDate getFechaUltimaRevision() {
-        return fechaUltimaRevision;
-    }
-
-    public void setFechaUltimaRevision(LocalDate fechaUltimaRevision) {
-        this.fechaUltimaRevision = fechaUltimaRevision;
-    }
-
-    public int getKilometraje() {
-        return kilometraje;
-    }
-
-    public void setKilometraje(int kilometraje) {
-        this.kilometraje = kilometraje;
-    }
-
     @Override
     public String toString() {
         return "Vehiculos{" +
@@ -108,8 +88,6 @@ public class Vehiculos {
                 ", añoDeFabricacion=" + añoDeFabricacion +
                 ", estado='" + estado + '\'' +
                 ", fechaDeAdquisicion=" + fechaDeAdquisicion +
-                ", fechaUltimaRevision=" + fechaUltimaRevision +
-                ", kilometraje=" + kilometraje +
                 '}';
     }
 }
