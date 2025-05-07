@@ -1,14 +1,14 @@
-package org.example.clasesparking;
+package org.example.tucochealquileres;
 
 public class TiposDeVehiculos {
 
     String nombre;
-    String descripcion;
+    String tipo;
     Double tarifaAdicional;
 
-    public TiposDeVehiculos(String nombre, String descripcion, Double tarifaAdicional) {
+    public TiposDeVehiculos(String nombre, String tipo, Double tarifaAdicional) {
         this.nombre = nombre;
-        this.descripcion = descripcion;
+        this.tipo = tipo;
         this.tarifaAdicional = tarifaAdicional;
     }
 
@@ -20,12 +20,12 @@ public class TiposDeVehiculos {
         this.nombre = nombre;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     public Double getTarifaAdicional() {
@@ -40,7 +40,7 @@ public class TiposDeVehiculos {
     public String toString() {
         return "TiposDeVehiculos{" +
                 "nombre='" + nombre + '\'' +
-                ", descripcion='" + descripcion + '\'' +
+                ", descripcion='" + tipo + '\'' +
                 ", tarifaAdicional=" + tarifaAdicional +
                 '}';
     }
