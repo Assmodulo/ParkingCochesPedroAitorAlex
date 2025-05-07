@@ -1,7 +1,8 @@
-package org.example.clasesparking;
+package org.example.tucochealquileres;
 
-import java.sql.Time;
+
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 public class Parkings {
     String nombre;
@@ -10,14 +11,14 @@ public class Parkings {
     int codigoPostal;
     int capacidad;
     int plazasDisponibles;
-    Time horaApertura;
-    Time horaCierre;
+    LocalTime horaApertura;
+    LocalTime horaCierre;
     Double tarifaPorHora;
     LocalDateTime fechaRegistro;
     Boolean activo;
 
 
-    public Parkings(String nombre, String direccion, String ciudad, int codigoPostal, int capacidad, int plazasDisponibles, Time horaApertura, Time horaCierre, Double tarifaPorHora, LocalDateTime fechaRegistro, Boolean activo) {
+    public Parkings(String nombre, String direccion, String ciudad, int codigoPostal, int capacidad, int plazasDisponibles, LocalTime horaApertura, LocalTime horaCierre, Double tarifaPorHora, LocalDateTime fechaRegistro, Boolean activo) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.ciudad = ciudad;
@@ -79,19 +80,19 @@ public class Parkings {
         this.plazasDisponibles = plazasDisponibles;
     }
 
-    public Time getHoraApertura() {
+    public LocalTime getHoraApertura() {
         return horaApertura;
     }
 
-    public void setHoraApertura(Time horaApertura) {
+    public void setHoraApertura(LocalTime horaApertura) {
         this.horaApertura = horaApertura;
     }
 
-    public Time getHoraCierre() {
+    public LocalTime getHoraCierre() {
         return horaCierre;
     }
 
-    public void setHoraCierre(Time horaCierre) {
+    public void setHoraCierre(LocalTime horaCierre) {
         this.horaCierre = horaCierre;
     }
 
