@@ -31,7 +31,6 @@ CREATE TABLE Parkings (
     plazas_disponibles INT NOT NULL,
     hora_apertura TIME NOT NULL,
     hora_cierre TIME NOT NULL,
-    fecha_registro DATETIME DEFAULT CURRENT_TIMESTAMP,
     activo BOOLEAN DEFAULT TRUE
 );
 
@@ -39,14 +38,14 @@ CREATE TABLE Parkings (
 CREATE TABLE TiposVehiculos (
     tipo_id INT PRIMARY KEY AUTO_INCREMENT,
     tipo enum('Compacto','Berlina','SUV','Todoterreno','Camioneta'),
-    descripcion VARCHAR(100),
-    tarifa DECIMAL(10, 2) DEFAULT 0.00
+    descripcion VARCHAR(50),
+    tarifa DECIMAL(6, 2) DEFAULT 0.00
 );
 
 -- Tabla para los vehículos
 CREATE TABLE Vehiculos (
     vehiculo_id INT PRIMARY KEY AUTO_INCREMENT,
-    matricula VARCHAR(20) UNIQUE NOT NULL,
+    matricula CHAR(8) UNIQUE NOT NULL,
     marca VARCHAR(50) NOT NULL,
     modelo VARCHAR(50) NOT NULL,
     color VARCHAR(30) NOT NULL,
@@ -65,13 +64,13 @@ CREATE TABLE Clientes (
     cliente_id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(50) NOT NULL,
     apellidos VARCHAR(100) NOT NULL,
-    dni VARCHAR(20) UNIQUE NOT NULL,
+    dni CHAR(9) UNIQUE NOT NULL,
     f_nacimiento DATE NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
     telefono CHAR(9) NOT NULL,
     direccion VARCHAR(100),
     ciudad VARCHAR(50),
-    codigo_postal VARCHAR(10),
+    codigo_postal CHAR(5),
     fecha_registro DATETIME DEFAULT CURRENT_TIMESTAMP,
     permiso_valido BOOLEAN NOT NULL DEFAULT TRUE,
     activo BOOLEAN DEFAULT TRUE
@@ -103,8 +102,8 @@ CREATE TABLE Empleados (
     empleado_id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(50) NOT NULL,
     apellidos VARCHAR(50) NOT NULL,
-    dni VARCHAR(20) UNIQUE NOT NULL,
-    email VARCHAR(100) UNIQUE NOT NULL,
+    dni CHAR(9) UNIQUE NOT NULL,
+    email VARCHAR(50) NOT NULL,
     telefono CHAR(9) NOT NULL,
     puesto VARCHAR(50) NOT NULL,
     parking_id INT,

@@ -12,7 +12,7 @@ import java.time.format.DateTimeFormatter;
 public class FormateadoresDeFechas {
 
     /*
-    Defino varios formateadores preparados para, o bien devolver el String de un LocalDate con el formate que nos interesa
+    Defino varios formateadores preparados para, o bien devolver el String de un LocalDate con el formato que nos interesa
     en Java, o para pasar un LocalDate a un formato que funciones en MySQL, ya que su formato es diferente
      */
     public static DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");

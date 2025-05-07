@@ -37,8 +37,8 @@ public class SingletonConnectionSQL {
             //Bloque de instrucción con un try catch con recursos para leer los datos necesarios para establecer
             //la conexión con la base de datos
 
-        try (FileReader fichero = new FileReader("src/main/resources/org/example/parkingvehiculosalquiler/datosConexionSql.dat");
-                 BufferedReader lector = new BufferedReader(fichero)) {
+        try (FileReader fichero = new FileReader("src/main/resources/org/example/tucochealquileres/datosConexionSql.dat");
+             BufferedReader lector = new BufferedReader(fichero)) {
 
                 String linea = lector.readLine();
 

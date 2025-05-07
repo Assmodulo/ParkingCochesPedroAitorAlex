@@ -15,7 +15,7 @@ public class ValidacionesYPatronesConcretos {
     /**
      * Array para calcular de forma automática la letra del dni al introducirlo
      */
-    private static String[] letrasDni = {"T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S",
+    private static final String[] letrasDni = {"T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S",
             "Q","V","H","L","C","K","E"};
 
     /**
