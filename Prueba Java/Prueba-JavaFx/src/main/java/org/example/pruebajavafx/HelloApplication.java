@@ -1,4 +1,4 @@
-package org.example.parkingvehiculosalquiler;
+package org.example.pruebajavafx;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

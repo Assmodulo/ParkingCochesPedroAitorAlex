@@ -1,4 +1,4 @@
-package org.example.parkingvehiculosalquiler;
+package org.example.pruebajavafx;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
