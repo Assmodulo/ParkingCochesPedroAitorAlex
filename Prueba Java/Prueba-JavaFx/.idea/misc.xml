@@ -8,7 +8,11 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD:Prueba Java/Prueba-JavaFx/.idea/misc.xml
   <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="openjdk-24" project-jdk-type="JavaSDK">
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="22" project-jdk-type="JavaSDK">
+>>>>>>> developer:JavaFX/Parking-Vehiculos-Alquiler/.idea/misc.xml
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
