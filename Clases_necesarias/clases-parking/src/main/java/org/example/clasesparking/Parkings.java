@@ -3,7 +3,7 @@ package org.example.clasesparking;
 import java.sql.Time;
 import java.time.LocalDateTime;
 
-public class Parking {
+public class Parkings {
     String nombre;
     String direccion;
     String ciudad;
@@ -17,7 +17,7 @@ public class Parking {
     Boolean activo;
 
 
-    public Parking(String nombre, String direccion, String ciudad, int codigoPostal, int capacidad, int plazasDisponibles, Time horaApertura, Time horaCierre, Double tarifaPorHora, LocalDateTime fechaRegistro, Boolean activo) {
+    public Parkings(String nombre, String direccion, String ciudad, int codigoPostal, int capacidad, int plazasDisponibles, Time horaApertura, Time horaCierre, Double tarifaPorHora, LocalDateTime fechaRegistro, Boolean activo) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.ciudad = ciudad;
@@ -135,5 +135,4 @@ public class Parking {
                 ", activo=" + activo +
                 '}';
     }
-
 }
