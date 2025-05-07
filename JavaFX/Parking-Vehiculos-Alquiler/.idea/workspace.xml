@@ -5,7 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cfd2c0e-c1e3-4ab0-ad3e-2266bbac8d85" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/.idea/Prueba Java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/main/java/org/example/demo/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/main/java/org/example/demo/MainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/main/resources/org/example/demo/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/main/resources/org/example/demo/styles.css" beforeDir="false" />
+>>>>>>> cc40773085a03f967a6c791569b17f36cb8041a2
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +64,11 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+<<<<<<< HEAD
     "last_opened_file_path": "C:/Users/daw1.COMPU-S033/Documents/ParkingCochesPedroAitorAlex/JavaFX/Parking-Vehiculos-Alquiler",
+=======
+    "last_opened_file_path": "C:/Users/daw1.COMPU-S026/Documents/Daw1/TrabajoIntermodular/JavaFX/Parking-Vehiculos-Alquiler",
+>>>>>>> cc40773085a03f967a6c791569b17f36cb8041a2
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,8 +93,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746606044342</updated>
+<<<<<<< HEAD
       <workItem from="1746606045429" duration="233000" />
       <workItem from="1746608310898" duration="548000" />
+=======
+      <workItem from="1746606045429" duration="841000" />
+      <workItem from="1746608337061" duration="289000" />
+>>>>>>> cc40773085a03f967a6c791569b17f36cb8041a2
     </task>
     <servers />
   </component>
