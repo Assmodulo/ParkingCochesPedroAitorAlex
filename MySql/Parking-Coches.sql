@@ -23,8 +23,8 @@ grant all privileges on ParkingAlquiler.* to developer@localhost;
 
 CREATE TABLE Parkings (
     parking_id INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(100) NOT NULL,
-    direccion VARCHAR(200) NOT NULL,
+    nombre VARCHAR(50) NOT NULL,
+    direccion VARCHAR(100) NOT NULL,
     ciudad VARCHAR(50) NOT NULL,
     codigo_postal VARCHAR(10) NOT NULL,
     capacidad_total INT NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE Parkings (
 CREATE TABLE TiposVehiculos (
     tipo_id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(50) NOT NULL,
-    descripcion VARCHAR(200),
+    descripcion VARCHAR(100),
     tarifa DECIMAL(10, 2) DEFAULT 0.00
 );
 
@@ -69,8 +69,8 @@ CREATE TABLE Clientes (
     dni VARCHAR(20) UNIQUE NOT NULL,
     f_nacimiento DATE NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
-    telefono VARCHAR(20) NOT NULL,
-    direccion VARCHAR(200),
+    telefono CHAR(9) NOT NULL,
+    direccion VARCHAR(100),
     ciudad VARCHAR(50),
     codigo_postal VARCHAR(10),
     fecha_registro DATETIME DEFAULT CURRENT_TIMESTAMP,
@@ -103,10 +103,10 @@ CREATE TABLE Reservas (
 CREATE TABLE Empleados (
     empleado_id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(50) NOT NULL,
-    apellidos VARCHAR(100) NOT NULL,
+    apellidos VARCHAR(50) NOT NULL,
     dni VARCHAR(20) UNIQUE NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
-    telefono VARCHAR(20) NOT NULL,
+    telefono CHAR(9) NOT NULL,
     puesto VARCHAR(50) NOT NULL,
     parking_id INT,
     fecha_contratacion DATE NOT NULL,
