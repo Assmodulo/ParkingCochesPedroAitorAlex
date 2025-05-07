@@ -5,11 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cfd2c0e-c1e3-4ab0-ad3e-2266bbac8d85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parkingvehiculosalquiler/SingletonConnectionSQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/parkingvehiculosalquiler/datosConexionSql.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/.idea/Prueba Java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/main/java/org/example/demo/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/main/java/org/example/demo/MainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/main/resources/org/example/demo/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prueba Java/PArking-Alquiler-PedroArza/src/main/resources/org/example/demo/styles.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +46,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2wlAytma2LcmdHNZ59zOi4rlNfp" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,9 +58,13 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Alex-SQL-SingletonConection",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/daw1.COMPU-S026/Documents/Daw1/TrabajoIntermodular/JavaFX/Parking-Vehiculos-Alquiler",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -61,7 +85,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746606044342</updated>
-      <workItem from="1746606045429" duration="233000" />
+      <workItem from="1746606045429" duration="841000" />
+      <workItem from="1746608337061" duration="289000" />
     </task>
     <servers />
   </component>
