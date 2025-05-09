@@ -114,4 +114,5 @@ public class Empleados {
     }
     //no hay setter de parking id debido a que en la base de datos es autoincremental
 
+
 }

@@ -131,19 +131,6 @@ public class Clientes {
     }
     //no hay setter del id porque al ser autoincremental no lo deberiamos de poder modificar
 
-    @Override
-    public String toString() {
-        return "Clientes{" +
-                "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", dni='" + dni + '\'' +
-                ", fechaNacimiento=" + fechaNacimiento +
-                ", email='" + email + '\'' +
-                ", telefono='" + telefono + '\'' +
-                ", direccion='" + direccion + '\'' +
-                ", ciudad='" + ciudad + '\'' +
-                ", codigoPostal='" + codigoPostal + '\'' +
-                ", fechaRegistro=" + fechaRegistro +
-                '}';
-    }
+
+
 }
