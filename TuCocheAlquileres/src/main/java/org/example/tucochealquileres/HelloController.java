@@ -1,4 +1,4 @@
-package org.example.clasesparking;
+package org.example.tucochealquileres;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
