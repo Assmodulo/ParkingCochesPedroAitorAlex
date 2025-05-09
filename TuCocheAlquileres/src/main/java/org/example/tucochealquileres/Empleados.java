@@ -3,7 +3,7 @@ package org.example.tucochealquileres;
 import java.time.LocalDate;
 
 public class Empleados {
-
+    int empleadoId;
     String nombre;
     String apellido;
     String dni;
@@ -12,6 +12,20 @@ public class Empleados {
     String puesto;
     LocalDate fechaContratacion;
     Boolean activo;
+    int parkingId;
+
+    public Empleados(int empleadoId, String nombre, String apellido, String dni, String email, String telefono, String puesto, LocalDate fechaContratacion, Boolean activo, int parkingId) {
+        this.empleadoId = empleadoId;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.dni = dni;
+        this.email = email;
+        this.telefono = telefono;
+        this.puesto = puesto;
+        this.fechaContratacion = fechaContratacion;
+        this.activo = activo;
+        this.parkingId = parkingId;
+    }
 
     public Empleados(String nombre, String apellido, String dni, String email, String telefono, String puesto, LocalDate fechaContratacion, Boolean activo) {
         this.nombre = nombre;
@@ -87,4 +101,17 @@ public class Empleados {
     public void setActivo(Boolean activo) {
         this.activo = activo;
     }
+
+    //getter de empleadoId
+    public int getEmpleadoId() {
+        return empleadoId;
+    }
+    //no hay setter de empleadoId porque en la base de datos es autoincremental
+
+    //getter de parkingId
+    public int getParkingId() {
+        return parkingId;
+    }
+    //no hay setter de parking id debido a que en la base de datos es autoincremental
+
 }

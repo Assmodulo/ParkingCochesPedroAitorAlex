@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Clientes {
-
+    int clienteId;
     String nombre;
     String apellido;
     String dni;
@@ -16,6 +16,22 @@ public class Clientes {
     LocalDateTime fechaRegistro;
     String email;
 
+
+    //constructor que recoge el id del cliente
+    public Clientes(int clienteId, String nombre, String apellido, String dni, LocalDate fechaNacimiento, String telefono, String direccion, String ciudad, String codigoPostal, LocalDateTime fechaRegistro, String email) {
+        this.clienteId = clienteId;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.dni = dni;
+        this.fechaNacimiento = fechaNacimiento;
+        this.telefono = telefono;
+        this.direccion = direccion;
+        this.ciudad = ciudad;
+        this.codigoPostal = codigoPostal;
+        this.fechaRegistro = fechaRegistro;
+        this.email = email;
+    }
+    //constructor para el insert sin el id de cliente porque en la base de datos es autoincremental
     public Clientes(String nombre, String apellido, String dni, LocalDate fechaNacimiento, String email, String telefono, String direccion, String ciudad, String codigoPostal, LocalDateTime fechaRegistro) {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -108,6 +124,12 @@ public class Clientes {
     public void setFechaRegistro(LocalDateTime fechaRegistro) {
         this.fechaRegistro = fechaRegistro;
     }
+
+    //getter del id del cliente
+    public int getClienteId() {
+        return clienteId;
+    }
+    //no hay setter del id porque al ser autoincremental no lo deberiamos de poder modificar
 
     @Override
     public String toString() {

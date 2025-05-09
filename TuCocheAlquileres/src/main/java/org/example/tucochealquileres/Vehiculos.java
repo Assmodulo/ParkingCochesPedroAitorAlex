@@ -3,21 +3,35 @@ package org.example.tucochealquileres;
 import java.time.LocalDate;
 
 public class Vehiculos {
-
+    int vehiculoId;
     String matricula;
     String marca;
     String modelo;
     String color;
-    LocalDate añoDeFabricacion;
     String estado;
     LocalDate fechaDeAdquisicion;
+    int tipoId;
+    int parkingId;
 
-    public Vehiculos(String matricula, String marca, String modelo, String color, LocalDate añoDeFabricacion, String estado, LocalDate fechaDeAdquisicion) {
+    //constructor con los id para poder almacenarlos en java
+    public Vehiculos(int vehiculoId, String matricula, String marca, String modelo, String color, int tipoId, String estado, LocalDate fechaDeAdquisicion, int parkingId) {
+        this.vehiculoId = vehiculoId;
         this.matricula = matricula;
         this.marca = marca;
         this.modelo = modelo;
         this.color = color;
-        this.añoDeFabricacion = añoDeFabricacion;
+        this.tipoId = tipoId;
+        this.estado = estado;
+        this.fechaDeAdquisicion = fechaDeAdquisicion;
+        this.parkingId = parkingId;
+    }
+
+    //constructor sin los id para hacer el insert porque son autoincrementales
+    public Vehiculos(String matricula, String marca, String modelo, String color, String estado, LocalDate fechaDeAdquisicion) {
+        this.matricula = matricula;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.color = color;
         this.estado = estado;
         this.fechaDeAdquisicion = fechaDeAdquisicion;
     }
@@ -54,14 +68,6 @@ public class Vehiculos {
         this.color = color;
     }
 
-    public LocalDate getAñoDeFabricacion() {
-        return añoDeFabricacion;
-    }
-
-    public void setAñoDeFabricacion(LocalDate añoDeFabricacion) {
-        this.añoDeFabricacion = añoDeFabricacion;
-    }
-
     public String getEstado() {
         return estado;
     }
@@ -78,16 +84,21 @@ public class Vehiculos {
         this.fechaDeAdquisicion = fechaDeAdquisicion;
     }
 
-    @Override
-    public String toString() {
-        return "Vehiculos{" +
-                "matricula='" + matricula + '\'' +
-                ", marca='" + marca + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", color='" + color + '\'' +
-                ", añoDeFabricacion=" + añoDeFabricacion +
-                ", estado='" + estado + '\'' +
-                ", fechaDeAdquisicion=" + fechaDeAdquisicion +
-                '}';
+    //getter de parkingId
+    public int getParkingId() {
+        return parkingId;
     }
+    //no hay setter de parkingId debido a que es autoincremental en la base de datos
+
+    //getter de tipoId
+    public int getTipoId() {
+        return tipoId;
+    }
+    //no hay setter de tipoId debido a que es autoincremental en la base de datos
+
+    //getter de vehiculoId
+    public int getVehiculoId() {
+        return vehiculoId;
+    }
+    //no hay setter de vehiculoId debido a que es autoincremental en la base de datos
 }
