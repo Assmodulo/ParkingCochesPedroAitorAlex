@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 public class Parkings {
+    private int parking_id;
     private String nombre;
     private String direccion;
     private String ciudad;
@@ -29,8 +30,9 @@ public class Parkings {
      * @param fechaRegistro LocalDateTime con la fecha en la que quedó registrado el parking
      * @param activo Boolean que nos indica si el parking está activo o si por alguna razón se ha cerrado
      */
-    public Parkings(String nombre, String direccion, String ciudad, int codigoPostal, int capacidad, int plazasDisponibles,
-                    LocalTime horaApertura, LocalTime horaCierre, LocalDateTime fechaRegistro, Boolean activo) {
+    public Parkings(int parking_id,String nombre, String direccion, String ciudad, int codigoPostal, int capacidad, int plazasDisponibles,
+                    LocalTime horaApertura, LocalTime horaCierre, Boolean activo) {
+        this.parking_id = parking_id;
         this.nombre = nombre;
         this.direccion = direccion;
         this.ciudad = ciudad;
@@ -39,7 +41,6 @@ public class Parkings {
         this.plazasDisponibles = plazasDisponibles;
         this.horaApertura = horaApertura;
         this.horaCierre = horaCierre;
-        this.fechaRegistro = fechaRegistro;
         this.activo = activo;
     }
 
