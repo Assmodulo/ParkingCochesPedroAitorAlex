@@ -81,10 +81,4 @@ public class SQLAccces {
     }
 
 
-
-
-
-
-
-
 }

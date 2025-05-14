@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.TilePane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
-<<<<<<< HEAD
 <BorderPane fx:id="menu_principal" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="600.0" minWidth="800.0" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.tucochealquileres.HelloController">
    <top>
       <HBox fx:id="barra_superior" prefHeight="100.0" prefWidth="1200.0" style="-fx-background-color: skyblue;" stylesheets="@style.css" BorderPane.alignment="CENTER">
@@ -24,142 +16,11 @@
    <left>
       <TilePane fx:id="menu_parkings" alignment="CENTER" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="btn_registroParking" mnemonicParsing="false" text="REGISTRO" />
+            <Button fx:id="btn_registroParking" mnemonicParsing="false" onAction="#mostrarVentanaRegistro" text="REGISTRO" />
          </children>
       </TilePane>
    </left>
    <center>
-      <Pane fx:id="ventana_registroParking" prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
-         <children>
-            <VBox fx:id="cajaVertical_registroParkings" alignment="CENTER" prefHeight="600.0" prefWidth="800.0">
-               <children>
-                  <HBox fx:id="hbox_nombreParking" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
-                     <children>
-                        <Label fx:id="lbl_nombre_registroParking" prefHeight="50.0" prefWidth="200.0" text="Nombre">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="input_nombre_registroParkings" prefHeight="50.0" prefWidth="400.0" promptText="Inserte el nombre del parking">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </TextField>
-                     </children>
-                  </HBox>
-                  <HBox fx:id="hbox_direccionParking1" alignment="CENTER" layoutX="10.0" layoutY="260.0" prefHeight="100.0" prefWidth="200.0">
-                     <children>
-                        <Label fx:id="lbl_direccion_registroParking" prefHeight="50.0" prefWidth="200.0" text="Dirección">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="input_direccion_registroParkings1" prefHeight="50.0" prefWidth="400.0" promptText="Inserte la ubicación del parking">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </TextField>
-                     </children>
-                  </HBox>
-                  <HBox fx:id="hbox_localidadParking" alignment="CENTER" layoutX="10.0" layoutY="310.0" prefHeight="100.0" prefWidth="200.0">
-                     <children>
-                        <Label fx:id="lbl_localidad_registroParking" prefHeight="50.0" prefWidth="200.0" text="Localidad">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="input_localidad_registroParkings" prefHeight="50.0" prefWidth="400.0" promptText="Inserte la localidad del parking">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </TextField>
-                     </children>
-                  </HBox>
-                  <HBox fx:id="hbox_cpParking" alignment="CENTER" layoutX="10.0" layoutY="360.0" prefHeight="100.0" prefWidth="200.0">
-                     <children>
-                        <Label fx:id="lbl_cp_registroParking" prefHeight="50.0" prefWidth="200.0" text="Código Postal">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="input_cp_registroParkings" prefHeight="50.0" prefWidth="400.0" promptText="Inserte el código postal">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </TextField>
-                     </children>
-                  </HBox>
-                  <HBox fx:id="hbox_capacidadParking" alignment="CENTER" layoutX="10.0" layoutY="410.0" prefHeight="100.0" prefWidth="200.0">
-                     <children>
-                        <Label fx:id="lbl_capacidad_registroParking" prefHeight="50.0" prefWidth="200.0" text="Capacidad">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="input_capacidad_registroParkings" prefHeight="50.0" prefWidth="400.0" promptText="Indique la capacidad máxima">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </TextField>
-                     </children>
-                  </HBox>
-                  <HBox fx:id="hbox_horarios_RegistroParking" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
-                     <children>
-                        <Label fx:id="lbl_horarioPicker_RegistroParking" text="Horario:" textAlignment="CENTER">
-                           <font>
-                              <Font size="22.0" />
-                           </font>
-                           <HBox.margin>
-                              <Insets right="50.0" />
-                           </HBox.margin>
-                        </Label>
-                        <HBox fx:id="registroHorarioApertura_RegistroParking" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
-                           <children>
-                              <ComboBox fx:id="cmb_HorasDesde_RegistroParking" prefWidth="150.0" promptText="Hora Desde" visibleRowCount="8">
-                                 <HBox.margin>
-                                    <Insets right="10.0" />
-                                 </HBox.margin>
-                              </ComboBox>
-                              <ComboBox fx:id="cmb_MinDesde_RegistroParking" prefWidth="150.0" promptText="Min. Desde">
-                                 <HBox.margin>
-                                    <Insets right="10.0" />
-                                 </HBox.margin>
-                              </ComboBox>
-                           </children>
-                           <HBox.margin>
-                              <Insets right="50.0" />
-                           </HBox.margin>
-                        </HBox>
-                        <HBox fx:id="registroHorarioCierre_RegistroParking" alignment="CENTER_LEFT" layoutX="349.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
-                           <children>
-                              <ComboBox fx:id="cmb_HorasHasta_RegistroParking" prefWidth="150.0" promptText="Hora Desde" visibleRowCount="8">
-                                 <HBox.margin>
-                                    <Insets right="10.0" />
-                                 </HBox.margin>
-                              </ComboBox>
-                              <ComboBox fx:id="cmb_MinHasta_RegistroParking" prefWidth="150.0" promptText="Min. Desde">
-                                 <HBox.margin>
-                                    <Insets right="10.0" />
-                                 </HBox.margin>
-                              </ComboBox>
-                           </children>
-                        </HBox>
-                     </children>
-                  </HBox>
-               </children>
-            </VBox>
-         </children>
-      </Pane>
+      
    </center>
 </BorderPane>
-=======
-<VBox alignment="CENTER" prefHeight="582.0" prefWidth="1057.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.example.tucochealquileres.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
-   <Avatar/>
-
-    <Label fx:id="welcomeText" />
-    <Button onAction="#onHelloButtonClick" text="Hello!" />
-</VBox>
->>>>>>> e58f7bdebb6f6fa0e2fb9ee191ee127e318795f2
