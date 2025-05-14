@@ -27,7 +27,6 @@ public class Parkings {
      * @param plazasDisponibles int con la plazas que todavia tiene disponible el parking
      * @param horaApertura LocalTime que nos indica la hora de apertura del parking
      * @param horaCierre LocalTime que nos indica la hora de cierre del parking
-     * @param fechaRegistro LocalDateTime con la fecha en la que quedó registrado el parking
      * @param activo Boolean que nos indica si el parking está activo o si por alguna razón se ha cerrado
      */
     public Parkings(int parking_id,String nombre, String direccion, String ciudad, int codigoPostal, int capacidad, int plazasDisponibles,
