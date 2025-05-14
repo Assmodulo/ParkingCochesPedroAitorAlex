@@ -60,5 +60,31 @@ public class SQLAccces {
             System.out.println("Error al obtener la lista de parkings: " + e.getMessage());
         }
         return lista;
+
     }
+
+    public List getListaParkings() {
+        List lista = new LinkedList<>();
+
+        String getParkings = "SELECT * FROM Parkings";
+
+        try (Connection connection = SingletonConnectionSQL.crearConexion(); Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery(getParkings);) {
+            while (resultSet.next()) {
+                lista.add(resultSet.getString("nombre"));
+            }
+        } catch (Exception e) {
+            System.out.println("Error al obtener la lista de Parkings: " + e.getMessage());
+        }
+
+        return lista;
+    }
+
+
+
+
+
+
+
+
 }
