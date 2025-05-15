@@ -114,6 +114,15 @@ public class RegistroParkingsController implements Initializable {
         cmb_HorasHasta_RegistroParking.setItems(horas);
         cmb_MinHasta_RegistroParking.setItems(minutos);
         cmb_MinDesde_RegistroParking.setItems(minutos);
+
+        input_cp_registroParkings.focusedProperty().addListener((observable, oldValue, newValue) -> {
+            if(!newValue){
+                if(!ValidacionesYPatronesConcretos.validarCodigoPostal(input_nombre_registroParkings.getText())){
+                    input_cp_registroParkings.setText("");
+                    input_cp_registroParkings.setPromptText("Error en el formato del Código Postal");
+                }
+            }
+        });
     }
 
     /**
@@ -148,4 +157,6 @@ public class RegistroParkingsController implements Initializable {
 
         return minutos;
     }
+
+
 }
