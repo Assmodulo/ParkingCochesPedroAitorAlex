@@ -70,7 +70,19 @@ public class TiposDeVehiculos {
         return tarifaAdicional;
     }
 
-    //Creo que para esta clase sólo tengo que definir un setter, el cual corresponde al precio de alquiler diario
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public void setIdTipoVehiculo(int idTipoVehiculo) {
+        this.idTipoVehiculo = idTipoVehiculo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+//Creo que para esta clase sólo tengo que definir un setter, el cual corresponde al precio de alquiler diario
 
     /**
      * Setter del precio diario de alquiler de un vehículo

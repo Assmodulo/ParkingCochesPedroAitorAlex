@@ -101,4 +101,17 @@ public class Vehiculos {
         return vehiculoId;
     }
     //no hay setter de vehiculoId debido a que es autoincremental en la base de datos
+
+
+    public void setVehiculoId(int vehiculoId) {
+        this.vehiculoId = vehiculoId;
+    }
+
+    public void setParkingId(int parkingId) {
+        this.parkingId = parkingId;
+    }
+
+    public void setTipoId(int tipoId) {
+        this.tipoId = tipoId;
+    }
 }

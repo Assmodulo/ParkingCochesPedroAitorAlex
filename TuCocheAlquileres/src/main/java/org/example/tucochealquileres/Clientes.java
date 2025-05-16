@@ -125,6 +125,11 @@ public class Clientes {
         this.fechaRegistro = fechaRegistro;
     }
 
+
+    public void setClienteId(int clienteId) {
+        this.clienteId = clienteId;
+    }
+
     //getter del id del cliente
     public int getClienteId() {
         return clienteId;

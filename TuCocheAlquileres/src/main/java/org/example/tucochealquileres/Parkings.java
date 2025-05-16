@@ -154,4 +154,36 @@ public class Parkings {
     public Boolean getActivo() {
         return activo;
     }
+
+    public void setPlazasDisponibles(int plazasDisponibles) {
+        this.plazasDisponibles = plazasDisponibles;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setFechaRegistro(LocalDateTime fechaRegistro) {
+        this.fechaRegistro = fechaRegistro;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public void setCodigoPostal(int codigoPostal) {
+        this.codigoPostal = codigoPostal;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
+    public void setCapacidad(int capacidad) {
+        this.capacidad = capacidad;
+    }
+
+    public void setParking_id(int parking_id) {
+        this.parking_id = parking_id;
+    }
 }

@@ -102,6 +102,14 @@ public class Empleados {
         this.activo = activo;
     }
 
+    public void setEmpleadoId(int empleadoId) {
+        this.empleadoId = empleadoId;
+    }
+
+    public void setParkingId(int parkingId) {
+        this.parkingId = parkingId;
+    }
+
     //getter de empleadoId
     public int getEmpleadoId() {
         return empleadoId;

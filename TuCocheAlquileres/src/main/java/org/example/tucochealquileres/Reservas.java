@@ -139,12 +139,49 @@ public class Reservas {
         return costeTotal;
     }
 
+    public void setFechaInicio(LocalDate fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    public void setFechaFin(LocalDate fechaFin) {
+        this.fechaFin = fechaFin;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public void setCosteTotal(Double costeTotal) {
+        this.costeTotal = costeTotal;
+    }
+
+    public void setIdCliente(int idCliente) {
+        this.idCliente = idCliente;
+    }
+
+    public void setIdParking(int idParking) {
+        this.idParking = idParking;
+    }
+
+    public void setIdREserva(int idREserva) {
+        this.idREserva = idREserva;
+    }
+
+    public void setIdVehiculo(int idVehiculo) {
+        this.idVehiculo = idVehiculo;
+    }
+
     /**
      * En principio este método nos devuleve un toString de la clase Reservas pero formateado para que salga de una forma
      * determinada y sea algo más adecuado para una list view. También evalua el valor de fechaFin para variar su valor en
      * función de si fechaFin es null o no.
      * @return Un String con un formato determinado
      */
+
+
+
+
+
     @Override
     public String toString() {
 
@@ -159,4 +196,5 @@ public class Reservas {
         this.idParking, FormateadoresDeFechas.formatearFecha(this.fechaInicio),fFinReserva,
                 this.estado, this.costeTotal);
     }
+
 }
