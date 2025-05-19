@@ -71,6 +71,19 @@ public class SQLAccces {
         try (Connection connection = SingletonConnectionSQL.crearConexion(); Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(getParkings);) {
             while (resultSet.next()) {
+
+                int parking_id = resultSet.getInt("parking_id");
+                String nombre = resultSet.getNString("nombre");
+                String direccion = resultSet.getNString("direccion");
+                String ciudad = resultSet.getNString("ciudad");
+                int codigoPostal = resultSet.getInt("codigo_postal");
+                int capacidad = resultSet.getInt("capacidad_total");
+                int plazasDisponibles = resultSet.getInt("plazas_disponibles");
+                LocalTime horaApertura = LocalTime.parse(resultSet.getNString("hora_apertura"));
+                LocalTime horaCierre = LocalTime.parse(resultSet.getNString("hora_cierre"));
+                Boolean activo = resultSet.getBoolean("activo");
+
+                Parkings p1 =  new Parkings(parking_id, nombre, direccion, ciudad, codigoPostal, capacidad, plazasDisponibles, horaApertura, horaCierre, activo);
                 lista.add(resultSet.getString("nombre"));
             }
         } catch (Exception e) {

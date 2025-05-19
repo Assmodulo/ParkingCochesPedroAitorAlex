@@ -15,7 +15,7 @@ import java.util.ResourceBundle;
 public class TviewParkingsController implements Initializable {
 
     @FXML
-    private TableView<Parkings> tview_Parkings = new TableView<>();
+    private TableView<Parkings> tview_Parkings;
 
     @FXML
     private TableColumn<Parkings, String> columnNombre, columnDireccion, columnCiudad, columnCP;
@@ -28,13 +28,25 @@ public class TviewParkingsController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        SQLAccces sqlAccces = new SQLAccces();
+
+        tview_Parkings = new TableView<Parkings>();
+
         ObservableList<Parkings> parkings = FXCollections.observableArrayList();
 
-        SQLAccces sqlAccces = new SQLAccces();
+        columnId = new TableColumn("parking_id");
+
+        columnId.setCellValueFactory(new PropertyValueFactory<>("parking_id"));
+
+
+
+
 
         parkings.addAll(sqlAccces.getListaParkings());
 
         tview_Parkings.setItems(parkings);
+        tview_Parkings.getColumns().addAll();
+
 
 
     }

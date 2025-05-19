@@ -34,6 +34,8 @@ CREATE TABLE Parkings (
     activo BOOLEAN DEFAULT TRUE
 );
 
+insert into Parkings (nombre, direccion, ciudad, codigo_postal, capacidad_total, plazas_disponibles, hora_apertura, hora_cierre) VALUES ('Las Farolas','Calle Inventada','Santander','39000',100,100,'08:00','23:00');
+
 -- Tabla para los tipos de vehículos
 CREATE TABLE TiposVehiculos (
     tipo_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -112,4 +114,6 @@ CREATE TABLE Empleados (
     FOREIGN KEY (parking_id) REFERENCES Parkings(parking_id)
 );
 
+insert into Parkings (nombre, direccion, ciudad, codigo_postal, capacidad_total, plazas_disponibles, hora_apertura, hora_cierre) values('Inventado','Calle falsa','Santander','39000',100,100,'09:00','23:00');
 
+select * from Parkings;
