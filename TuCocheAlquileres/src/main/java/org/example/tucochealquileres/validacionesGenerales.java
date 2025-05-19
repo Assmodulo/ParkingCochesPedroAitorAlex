@@ -1,5 +1,7 @@
 package org.example.tucochealquileres;
 
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -13,7 +15,6 @@ public class validacionesGenerales {
         //Retornamos el valor de la comprobación, que será true en caso de ser correcto, false en caso contrario
         return matcher.matches();
     }
-
 
 
     public static boolean validarVarchar100(String varchar100) {
@@ -37,4 +38,15 @@ public class validacionesGenerales {
     }
 
 
-}
+        public static boolean validarHoraHHmm(String hora) {
+
+            Pattern patronHora = Pattern.compile("[0-9]{2}:[0-9]{2}");
+
+            Matcher matcher = patronHora.matcher(hora);
+
+            return matcher.matches();
+        }
+
+
+    }
+
