@@ -114,4 +114,7 @@ public class ValidacionesYPatronesConcretos {
         return letra;
     }
 
+    public static boolean validarMatricula(String text) {
+        return false;
+    }
 }
