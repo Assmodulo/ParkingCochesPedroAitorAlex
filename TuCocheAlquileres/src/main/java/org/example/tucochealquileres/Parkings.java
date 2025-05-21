@@ -4,18 +4,23 @@ package org.example.tucochealquileres;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
+
 public class Parkings {
     private int parking_id;
     private String nombre;
     private String direccion;
     private String ciudad;
-    private int codigoPostal;
+    private String codigoPostal;
     private int capacidad;
     private int plazasDisponibles;
     private LocalTime horaApertura;
     private LocalTime horaCierre;
-    private LocalDateTime fechaRegistro;
     private Boolean activo;
+
+
+    public Parkings(){
+
+    };
 
     /**
      * Constructor de un parking. Nos sirve lo mismo para pasar los objetos al modelo o para obtenerlos a partir de el
@@ -29,7 +34,7 @@ public class Parkings {
      * @param horaCierre LocalTime que nos indica la hora de cierre del parking
      * @param activo Boolean que nos indica si el parking está activo o si por alguna razón se ha cerrado
      */
-    public Parkings(int parking_id,String nombre, String direccion, String ciudad, int codigoPostal, int capacidad, int plazasDisponibles,
+    public Parkings(int parking_id,String nombre, String direccion, String ciudad, String codigoPostal, int capacidad, int plazasDisponibles,
                     LocalTime horaApertura, LocalTime horaCierre, Boolean activo) {
         this.parking_id = parking_id;
         this.nombre = nombre;
@@ -103,7 +108,7 @@ public class Parkings {
      * Getter del codigo postal de un parking
      * @return Un String con el codigo postal de un parking
      */
-    public int getCodigoPostal() {
+    public String getCodigoPostal() {
         return codigoPostal;
     }
 
@@ -140,14 +145,6 @@ public class Parkings {
     }
 
     /**
-     * Getter de la fecha de registro de un parking
-     * @return Un objeto LocalDateTime con la fecha de registro
-     */
-    public LocalDateTime getFechaRegistro() {
-        return fechaRegistro;
-    }
-
-    /**
      * Getter del estado de actividad de un parking
      * @return un Boolean que nos indica el estado de actividad de un parking
      */
@@ -163,15 +160,12 @@ public class Parkings {
         this.nombre = nombre;
     }
 
-    public void setFechaRegistro(LocalDateTime fechaRegistro) {
-        this.fechaRegistro = fechaRegistro;
-    }
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
 
-    public void setCodigoPostal(int codigoPostal) {
+    public void setCodigoPostal(String codigoPostal) {
         this.codigoPostal = codigoPostal;
     }
 
@@ -185,5 +179,9 @@ public class Parkings {
 
     public void setParking_id(int parking_id) {
         this.parking_id = parking_id;
+    }
+
+    public int getParking_id() {
+        return parking_id;
     }
 }

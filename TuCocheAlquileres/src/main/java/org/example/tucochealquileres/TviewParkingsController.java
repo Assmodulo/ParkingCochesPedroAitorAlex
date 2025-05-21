@@ -9,13 +9,14 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ResourceBundle;
 
 public class TviewParkingsController implements Initializable {
 
     @FXML
-    private TableView<Parkings> tview_Parkings;
+    private TableView<Parkings> tview_Parkings = new TableView<>();
 
     @FXML
     private TableColumn<Parkings, String> columnNombre, columnDireccion, columnCiudad, columnCP;
@@ -26,28 +27,30 @@ public class TviewParkingsController implements Initializable {
     @FXML
     private TableColumn<Parkings, LocalTime> columnApertura, columnCierre;
 
+    @FXML
+    private TableColumn<Parkings, Boolean> columnActivo;
+
+    @FXML
+    ObservableList<Parkings> parkings = FXCollections.observableArrayList();
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        SQLAccces sqlAccces = new SQLAccces();
+        this.columnId.setCellValueFactory(new PropertyValueFactory<>("parking_id"));
+        this.columnNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+        this.columnDireccion.setCellValueFactory(new PropertyValueFactory<>("direccion"));
+        this.columnCiudad.setCellValueFactory(new PropertyValueFactory<>("ciudad"));
+        this.columnCP.setCellValueFactory(new PropertyValueFactory<>("codigoPostal"));
+        this.columnCapacidad.setCellValueFactory(new PropertyValueFactory<>("capacidad"));
+        this.columnDisponibles.setCellValueFactory(new PropertyValueFactory<>("plazasDisponibles"));
+        this.columnApertura.setCellValueFactory(new PropertyValueFactory<>("horaApertura"));
+        this.columnCierre.setCellValueFactory(new PropertyValueFactory<>("horaCierre"));
+        this.columnActivo.setCellValueFactory(new PropertyValueFactory<>("activo"));
 
-        tview_Parkings = new TableView<Parkings>();
+        SQLAccces sql = new SQLAccces();
 
-        ObservableList<Parkings> parkings = FXCollections.observableArrayList();
+        parkings.addAll(sql.getListaParkings());
 
-        columnId = new TableColumn("parking_id");
-
-        columnId.setCellValueFactory(new PropertyValueFactory<>("parking_id"));
-
-
-
-
-
-        parkings.addAll(sqlAccces.getListaParkings());
-
-        tview_Parkings.setItems(parkings);
-        tview_Parkings.getColumns().addAll();
-
-
+        this.tview_Parkings.setItems(parkings);
 
     }
 }
