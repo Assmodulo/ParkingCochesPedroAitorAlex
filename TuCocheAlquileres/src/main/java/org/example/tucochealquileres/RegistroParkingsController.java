@@ -1,5 +1,6 @@
 package org.example.tucochealquileres;
 
+import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -14,6 +15,7 @@ import javafx.scene.layout.VBox;
 
 import java.net.URL;
 import java.text.DecimalFormat;
+import java.time.LocalTime;
 import java.util.ResourceBundle;
 
 public class RegistroParkingsController implements Initializable {
@@ -102,6 +104,39 @@ public class RegistroParkingsController implements Initializable {
     @FXML
     private Button botonAtras_RegistroParkings;
 
+    private String nombre, direccion, localidad, cp;
+    private int capacidad;
+    private LocalTime horarioApertura, horarioCierre;
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public void setLocalidad(String localidad) {
+        this.localidad = localidad;
+    }
+
+
+    public void setCapacidad(int capacidad) {
+        this.capacidad = capacidad;
+    }
+
+    public void setHorarioApertura(LocalTime horarioApertura) {
+        this.horarioApertura = horarioApertura;
+    }
+
+    public void setHorarioCierre(LocalTime horarioCierre) {
+        this.horarioCierre = horarioCierre;
+    }
+
+    public void setCp(String cp) {
+        this.cp = cp;
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -115,16 +150,64 @@ public class RegistroParkingsController implements Initializable {
         cmb_MinHasta_RegistroParking.setItems(minutos);
         cmb_MinDesde_RegistroParking.setItems(minutos);
 
-        input_cp_registroParkings.setText(" ");
+        inicializarVariables();
 
-        input_cp_registroParkings.focusedProperty().addListener((observable, oldValue, newValue) -> {
+        input_nombre_registroParkings.focusedProperty().addListener((observable, oldValue, newValue) -> {
             if(!newValue){
-                if(!ValidacionesYPatronesConcretos.validarCodigoPostal(input_nombre_registroParkings.getText())){
-                    input_cp_registroParkings.setText("");
-                    input_cp_registroParkings.setPromptText("Error en el formato del Código Postal");
+                if(!validacionesGenerales.validarVarchar50(input_nombre_registroParkings.getText())){
+                    input_nombre_registroParkings.setText("");
+                    input_nombre_registroParkings.setPromptText("Longitud del nombre incorrecta");
+                }else{
+                    setNombre(input_nombre_registroParkings.getText());
                 }
             }
         });
+
+        input_direccion_registroParkings.focusedProperty().addListener((observable, oldValue, newValue) -> {
+            if(!newValue){
+                if(!validacionesGenerales.validarVarchar100(input_direccion_registroParkings.getText())){
+                    input_direccion_registroParkings.setText("");
+                    input_direccion_registroParkings.setPromptText("Longitud del direccion incorrecta");
+                }else{
+                    setDireccion(input_direccion_registroParkings.getText());
+                }
+            }
+        });
+
+        input_localidad_registroParkings.focusedProperty().addListener((observable, oldValue, newValue) -> {
+           if(!newValue){
+               if(!validacionesGenerales.validarVarchar50(input_localidad_registroParkings.getText())){
+                   input_localidad_registroParkings.setText("");
+                   input_localidad_registroParkings.setPromptText("Longitud del localidad incorrecta");
+               }else{
+                   setLocalidad(input_localidad_registroParkings.getText());
+               }
+           }
+
+        });
+
+
+
+        input_cp_registroParkings.focusedProperty().addListener((observable, oldValue, newValue) -> {
+            if(!newValue){
+                if(!ValidacionesYPatronesConcretos.validarCodigoPostal(input_cp_registroParkings.getText())){
+                    input_cp_registroParkings.setText("");
+                    input_cp_registroParkings.setPromptText("Error en el formato del Código Postal");
+                }else{
+                    this.setCp(input_cp_registroParkings.getText());
+                }
+            }
+        });
+
+        input_capacidad_registroParkings.focusedProperty().addListener((observable, oldValue, newValue) -> {
+
+            if(!newValue){
+                
+            }
+
+        });
+
+
     }
 
     /**
@@ -158,6 +241,17 @@ public class RegistroParkingsController implements Initializable {
         }
 
         return minutos;
+    }
+
+    public void inicializarVariables(){
+        setNombre("");
+        setDireccion("");
+        setLocalidad("");
+        setCp("");
+        setCapacidad(0);
+        setHorarioApertura((LocalTime) null);
+        setHorarioCierre((LocalTime) null);
+
     }
 
 
