@@ -1,4 +1,4 @@
-package org.example.parkingvehiculosalquiler;
+package org.example.tucochealquileres;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
