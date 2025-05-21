@@ -7,3 +7,7 @@
 #Creo la rama developer
 
 #Creo las diferentes ramas para que cada uno trabaje
+
+#Se hacen cambios para que quede todo en su sitio
+
+#Se vuelve a colocar todo
