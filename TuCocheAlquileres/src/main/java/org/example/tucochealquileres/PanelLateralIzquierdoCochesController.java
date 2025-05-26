@@ -7,7 +7,7 @@ import javafx.scene.layout.Pane;
 
 import java.io.IOException;
 
-public class PanelLateralIzquierdoParkingsController {
+public class PanelLateralIzquierdoCochesController {
 
 
     private ventanaPrincipalController ventanaPrincipalController;
