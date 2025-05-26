@@ -201,21 +201,13 @@ public class RegistroParkingsController implements Initializable {
 
             if(!newValue){
 
-<<<<<<< HEAD
-                
-
-=======
->>>>>>> c7faacf9384c83f904a8532f23aa5b8da2953027
                 try{
                     setCapacidad(Integer.parseInt(input_capacidad_registroParkings.getText()));
                 }catch(NumberFormatException e){
                     input_capacidad_registroParkings.setText("");
                     input_capacidad_registroParkings.setPromptText("Debe de introducir un número");
                 }
-<<<<<<< HEAD
 
-=======
->>>>>>> c7faacf9384c83f904a8532f23aa5b8da2953027
             }
 
         });

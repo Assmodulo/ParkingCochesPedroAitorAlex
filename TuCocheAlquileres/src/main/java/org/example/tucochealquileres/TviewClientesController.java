@@ -10,6 +10,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 
+
 import java.awt.*;
 import java.net.URL;
 import java.text.DecimalFormat;
@@ -107,7 +108,7 @@ public class TviewClientesController {
 
     @FXML
     private ComboBox cmb_mesNacimiento_RegistroClientes;
-
+    
     @FXML
     private ComboBox cmb_anioNacimiento_RegistroClientes;
 
