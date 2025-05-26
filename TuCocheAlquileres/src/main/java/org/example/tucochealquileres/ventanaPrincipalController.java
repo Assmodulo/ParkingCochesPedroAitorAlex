@@ -51,4 +51,13 @@ public class ventanaPrincipalController implements Initializable {
         controladorIzquierdo.setVentanaPrincipalController(this);
     }
 
+    @FXML
+    public void mostrarPanelCoches() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("panelLateralCoches.fxml"));
+        TilePane panelIzquierdo = loader.load();
+        menu_principal.setLeft(panelIzquierdo);
+        PanelLateralIzquierdoCochesController controladorIzquierdo = loader.getController();
+        controladorIzquierdo.setVentanaPrincipalController(this);
+    }
+
 }
