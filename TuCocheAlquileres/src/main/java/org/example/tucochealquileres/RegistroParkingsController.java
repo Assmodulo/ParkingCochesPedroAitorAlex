@@ -104,7 +104,7 @@ public class RegistroParkingsController implements Initializable {
     @FXML
     private Button botonAtras_RegistroParkings;
 
-    private String nombre, direccion, localidad, cp;
+    private String nombre, direccion, localidad, cp, horaApertura, minutosApertura, horaCierre, minutosCierre;
     private int capacidad;
     private LocalTime horarioApertura, horarioCierre;
 
@@ -202,6 +202,7 @@ public class RegistroParkingsController implements Initializable {
         input_capacidad_registroParkings.focusedProperty().addListener((observable, oldValue, newValue) -> {
 
             if(!newValue){
+
                 try{
                     setCapacidad(Integer.parseInt(input_capacidad_registroParkings.getText()));
                 }catch(NumberFormatException e){
@@ -210,6 +211,30 @@ public class RegistroParkingsController implements Initializable {
                 }
             }
 
+        });
+
+        cmb_HorasDesde_RegistroParking.focusedProperty().addListener((observable, oldValue, newValue) -> {
+            if(!newValue){
+                horaApertura = cmb_HorasDesde_RegistroParking.getSelectionModel().getSelectedItem();
+            }
+        });
+
+        cmb_MinDesde_RegistroParking.focusedProperty().addListener((observable, oldValue, newValue) -> {
+            if(!newValue){
+                minutosApertura = cmb_MinDesde_RegistroParking.getSelectionModel().getSelectedItem();
+            }
+        });
+
+        cmb_HorasHasta_RegistroParking.focusedProperty().addListener((observable, oldValue, newValue) -> {
+            if(!newValue){
+                horaCierre = cmb_HorasHasta_RegistroParking.getSelectionModel().getSelectedItem();
+            }
+        });
+
+        cmb_MinHasta_RegistroParking.focusedProperty().addListener((observable, oldValue, newValue) -> {
+            if(!newValue){
+                minutosCierre = cmb_MinHasta_RegistroParking.getSelectionModel().getSelectedItem();
+            }
         });
 
 
@@ -235,7 +260,16 @@ public class RegistroParkingsController implements Initializable {
 
         return horas;
     }
-
+    // conan el barbaro
+    // seño de los anillos
+    //gladiator
+    //piratas del caribe
+    //avatar
+    //star wars 123
+    //el ultimo moicano
+    //el ultimo samurai
+    //the witcher
+    //braveheart
     private ObservableList<String> cargarMinutos(){
         DecimalFormat df = new DecimalFormat("00");
         String numeroFormateado = "";
