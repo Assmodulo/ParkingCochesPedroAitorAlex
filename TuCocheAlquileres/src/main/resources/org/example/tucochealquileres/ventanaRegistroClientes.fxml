@@ -2,7 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
@@ -11,11 +11,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="ventana_registroParking" prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.tucochealquileres.RegistroParkingsController">
+<Pane fx:id="ventana_registroClientes" prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.tucochealquileres.RegistroParkingsController">
     <children>
-        <VBox fx:id="cajaVertical_registroParkings" alignment="CENTER" prefHeight="600.0" prefWidth="800.0">
+        <VBox fx:id="cajaVertical_registroClientes" alignment="CENTER" prefHeight="600.0" prefWidth="800.0">
             <children>
-                <HBox fx:id="hbox_nombreParking" alignment="CENTER" prefHeight="42.0" prefWidth="800.0">
+                <HBox fx:id="hbox_nombreClientes" alignment="CENTER" prefHeight="42.0" prefWidth="800.0">
                     <children>
                         <Label fx:id="lbl_nombre_registroClientes" prefHeight="50.0" prefWidth="200.0" text="Nombre">
                             <font>
@@ -32,7 +32,7 @@
                 </HBox>
                 <HBox fx:id="hbox_direccionParking" alignment="CENTER" layoutX="10.0" layoutY="260.0" prefHeight="42.0" prefWidth="800.0">
                     <children>
-                        <Label fx:id="lbl_apellidos_registroClientes" prefHeight="50.0" prefWidth="200.0" text="Apellidos">
+                        <Label fx:id="lbl_apellido_registroClientes" prefHeight="50.0" prefWidth="200.0" text="Apellidos">
                             <font>
                                 <Font size="18.0" />
                             </font>
@@ -45,7 +45,7 @@
                         <Label fx:id="lbl_validacionDireccion" prefHeight="25.0" prefWidth="25.0" />
                     </children>
                 </HBox>
-            <HBox fx:id="hbox_capacidadParking2" alignment="CENTER" prefHeight="42.0" prefWidth="800.0">
+            <HBox fx:id="hbox_telefonoClientes" alignment="CENTER" prefHeight="42.0" prefWidth="800.0">
                <children>
                   <Label fx:id="lbl_telefono_registroClientes" prefHeight="50.0" prefWidth="200.0" text="Telefono">
                      <font>
@@ -60,7 +60,7 @@
                   <Label fx:id="lbl_validacionCapacidad2" prefHeight="25.0" prefWidth="25.0" />
                </children>
             </HBox>
-                <HBox fx:id="hbox_localidadParking" alignment="CENTER" layoutX="10.0" layoutY="310.0" prefHeight="42.0" prefWidth="800.0">
+                <HBox fx:id="hbox_dniClientes" alignment="CENTER" layoutX="10.0" layoutY="310.0" prefHeight="42.0" prefWidth="800.0">
                     <children>
                         <Label fx:id="lbl_dni_registroClientes" prefHeight="50.0" prefWidth="200.0" text="Dni">
                             <font>
@@ -75,7 +75,7 @@
                         <Label fx:id="lbl_validacionLocalidad" prefHeight="25.0" prefWidth="25.0" />
                     </children>
                 </HBox>
-                <HBox fx:id="hbox_cpParking" alignment="CENTER" layoutX="10.0" layoutY="360.0" prefHeight="42.0" prefWidth="800.0">
+                <HBox fx:id="hbox_emailClientes" alignment="CENTER" layoutX="10.0" layoutY="360.0" prefHeight="42.0" prefWidth="800.0">
                     <children>
                         <Label fx:id="lbl_email_registroClientes" prefHeight="50.0" prefWidth="200.0" text="Email">
                             <font>
@@ -94,7 +94,7 @@
                         </Label>
                     </children>
                 </HBox>
-                <HBox fx:id="hbox_capacidadParking" alignment="CENTER" layoutX="10.0" layoutY="410.0" prefHeight="42.0" prefWidth="800.0">
+                <HBox fx:id="hbox_ciudadClientes" alignment="CENTER" layoutX="10.0" layoutY="410.0" prefHeight="42.0" prefWidth="800.0">
                     <children>
                         <Label fx:id="lbl_ciudad_registroClientes" prefHeight="50.0" prefWidth="200.0" text="Ciudad">
                             <font>
@@ -109,7 +109,7 @@
                         <Label fx:id="lbl_validacionCapacidad" prefHeight="25.0" prefWidth="25.0" />
                     </children>
                 </HBox>
-            <HBox fx:id="hbox_capacidadParking3" alignment="CENTER" layoutX="10.0" layoutY="303.0" prefHeight="42.0" prefWidth="800.0">
+            <HBox fx:id="hbox_cpClientes" alignment="CENTER" layoutX="10.0" layoutY="303.0" prefHeight="42.0" prefWidth="800.0">
                <children>
                   <Label fx:id="lbl_cp_registroClientes" prefHeight="50.0" prefWidth="200.0" text="Codigo Postal">
                      <font>
@@ -124,7 +124,7 @@
                   <Label fx:id="lbl_validacionCapacidad3" prefHeight="25.0" prefWidth="25.0" />
                </children>
             </HBox>
-            <HBox fx:id="hbox_capacidadParking1" alignment="CENTER" prefHeight="37.0" prefWidth="800.0">
+            <HBox fx:id="hbox_direccionClientes" alignment="CENTER" prefHeight="37.0" prefWidth="800.0">
                <children>
                   <Label fx:id="lbl_direccion_registroClientes" prefHeight="50.0" prefWidth="200.0" text="Dirección">
                      <font>
@@ -141,7 +141,7 @@
             </HBox>
                 <HBox fx:id="hbox_horarios_RegistroParking" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                     <children>
-                        <HBox fx:id="registroHorarioApertura_RegistroParking" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="1032.0">
+                        <HBox fx:id="registroFNacimiento_RegistroClientes" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="1032.0">
                             <children>
                               <Label fx:id="lbl_fechaNacimiento_RegistroClientes" alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="302.0" text="Fecha de Nacimiento" textAlignment="CENTER">
                                   <font>
@@ -151,21 +151,7 @@
                                       <Insets right="50.0" />
                                   </HBox.margin>
                               </Label>
-                                <ComboBox fx:id="cmb_diaNacimiento_RegistroClientes" prefHeight="25.0" prefWidth="62.0" promptText="Dia" visibleRowCount="8">
-                                    <HBox.margin>
-                                        <Insets right="10.0" />
-                                    </HBox.margin>
-                                </ComboBox>
-                                <ComboBox fx:id="cmb_mesNacimiento_RegistroClientes" prefHeight="25.0" prefWidth="68.0" promptText="Mes" visibleRowCount="8">
-                                    <HBox.margin>
-                                        <Insets right="10.0" />
-                                    </HBox.margin>
-                                </ComboBox>
-                                <ComboBox fx:id="cmb_añoNacimiento_RegistroClientes" prefHeight="25.0" prefWidth="68.0" promptText="Año">
-                                    <HBox.margin>
-                                        <Insets right="10.0" />
-                                    </HBox.margin>
-                                </ComboBox>
+                        <DatePicker fx:id="DatePicker_FechaNacimiento_registroClientes" prefHeight="35.0" prefWidth="316.0" />
                             </children>
                             <HBox.margin>
                                 <Insets right="50.0" />
@@ -174,7 +160,7 @@
                         <HBox fx:id="registroHorarioCierre_RegistroParking" alignment="CENTER_LEFT" layoutX="349.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" />
                     </children>
                 </HBox>
-                <HBox fx:id="botonera_RegistroParkings" alignment="CENTER_RIGHT" prefHeight="68.0" prefWidth="800.0">
+                <HBox fx:id="botonera_RegistroClientes" alignment="CENTER_RIGHT" prefHeight="68.0" prefWidth="800.0">
                     <children>
                         <Button fx:id="botonGuardar_RegistroClientes" alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="REGISTRAR" textAlignment="CENTER">
                             <font>
