@@ -1,9 +1,6 @@
 package org.example.tucochealquileres;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.time.LocalTime;
 import java.util.LinkedList;
 import java.util.List;
@@ -94,4 +91,26 @@ public class SQLAccces {
     }
 
 
+    public void registrarParking(Parkings parkings) {
+
+        String myStatement = "insert into Parkings (nombre, direccion, ciudad, codigo_postal, capacidad_total, " +
+                "plazas_disponibles, hora_apertura, hora_cierre) values (?,?,?,?,?,?,?,?)";
+
+        try(Connection con = SingletonConnectionSQL.crearConexion();
+            PreparedStatement statement = con.prepareStatement(myStatement)){
+
+            statement.setString(1, parkings.getNombre());
+            statement.setString(2, parkings.getDireccion());
+            statement.setString(3, parkings.getCiudad());
+            statement.setString(4, parkings.getCodigoPostal());
+            statement.setInt(5, parkings.getCapacidad());
+            statement.setInt(6, parkings.getPlazasDisponibles());
+            statement.setTime(7, Time.valueOf(parkings.getHoraApertura()));
+            statement.setTime(8, Time.valueOf(parkings.getHoraCierre()));
+            statement.executeUpdate();
+
+        }catch (SQLException e){
+            System.out.println("Error al registrar el parking: " + e.getMessage());
+        }
+    }
 }

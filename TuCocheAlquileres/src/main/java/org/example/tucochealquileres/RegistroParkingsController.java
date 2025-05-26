@@ -14,6 +14,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 
 import java.net.URL;
+import java.sql.Connection;
 import java.text.DecimalFormat;
 import java.time.LocalTime;
 import java.util.ResourceBundle;
@@ -139,6 +140,16 @@ public class RegistroParkingsController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        botonGuardar_RegistroParking.visibleProperty().bind(input_nombre_registroParkings.textProperty().isNotEmpty().
+                                                            and(input_direccion_registroParkings.textProperty().isNotEmpty().
+                                                            and(input_localidad_registroParkings.textProperty().isNotEmpty().
+                                                            and(input_cp_registroParkings.textProperty().isNotEmpty().
+                                                            and(input_capacidad_registroParkings.textProperty().isNotEmpty().
+                                                            and(cmb_HorasDesde_RegistroParking.valueProperty().isNotNull()).
+                                                            and(cmb_MinDesde_RegistroParking.valueProperty().isNotNull()).
+                                                            and(cmb_HorasHasta_RegistroParking.valueProperty().isNotNull())).
+                                                            and(cmb_MinHasta_RegistroParking.valueProperty().isNotNull())))));
 
         ObservableList<String> minutos = cargarMinutos();
         ObservableList<String> horas = cargarHoras();
@@ -281,6 +292,24 @@ public class RegistroParkingsController implements Initializable {
         setHorarioApertura((LocalTime) null);
         setHorarioCierre((LocalTime) null);
 
+    }
+
+    public void guardarParkingBaseDatos(){
+
+        Parkings parkings = new Parkings(nombre, direccion, localidad, cp, capacidad, getHorarioApertura(), getHorarioCierre());
+
+        SQLAccces sqlAccces = new SQLAccces();
+
+        sqlAccces.registrarParking(parkings);
+    }
+
+    private LocalTime getHorarioApertura(){
+
+        return LocalTime.parse(horaApertura.concat(":").concat(minutosApertura));
+    }
+
+    private LocalTime getHorarioCierre(){
+        return LocalTime.parse(horaCierre.concat(":").concat(minutosCierre));
     }
 
 

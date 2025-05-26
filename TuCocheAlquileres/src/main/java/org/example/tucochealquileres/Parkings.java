@@ -22,6 +22,18 @@ public class Parkings {
 
     };
 
+    public Parkings(String nombre, String direccion, String ciudad, String codigoPostal, int capacidad, LocalTime horaApertura, LocalTime horaCierre) {
+
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.ciudad = ciudad;
+        this.codigoPostal = codigoPostal;
+        this.capacidad = capacidad;
+        this.plazasDisponibles = capacidad;
+        this.horaApertura = horaApertura;
+        this.horaCierre = horaCierre;
+    }
+
     /**
      * Constructor de un parking. Nos sirve lo mismo para pasar los objetos al modelo o para obtenerlos a partir de el
      * @param nombre String con el nombre del parking
