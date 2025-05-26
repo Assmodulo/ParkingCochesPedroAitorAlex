@@ -104,7 +104,7 @@ public class RegistroParkingsController implements Initializable {
     @FXML
     private Button botonAtras_RegistroParkings;
 
-    private String nombre, direccion, localidad, cp;
+    private String nombre, direccion, localidad, cp, horaApertura, minutosApertura, horaCierre, minutosCierre;
     private int capacidad;
     private LocalTime horarioApertura, horarioCierre;
 
@@ -202,18 +202,39 @@ public class RegistroParkingsController implements Initializable {
         input_capacidad_registroParkings.focusedProperty().addListener((observable, oldValue, newValue) -> {
 
             if(!newValue){
-<<<<<<< HEAD
-                
-=======
+
                 try{
                     setCapacidad(Integer.parseInt(input_capacidad_registroParkings.getText()));
                 }catch(NumberFormatException e){
                     input_capacidad_registroParkings.setText("");
                     input_capacidad_registroParkings.setPromptText("Debe de introducir un número");
                 }
->>>>>>> 4f036a8f1e410ffa80e1e829df1c5ba72fef0911
             }
 
+        });
+
+        cmb_HorasDesde_RegistroParking.focusedProperty().addListener((observable, oldValue, newValue) -> {
+            if(!newValue){
+                horaApertura = cmb_HorasDesde_RegistroParking.getSelectionModel().getSelectedItem();
+            }
+        });
+
+        cmb_MinDesde_RegistroParking.focusedProperty().addListener((observable, oldValue, newValue) -> {
+            if(!newValue){
+                minutosApertura = cmb_MinDesde_RegistroParking.getSelectionModel().getSelectedItem();
+            }
+        });
+
+        cmb_HorasHasta_RegistroParking.focusedProperty().addListener((observable, oldValue, newValue) -> {
+            if(!newValue){
+                horaCierre = cmb_HorasHasta_RegistroParking.getSelectionModel().getSelectedItem();
+            }
+        });
+
+        cmb_MinHasta_RegistroParking.focusedProperty().addListener((observable, oldValue, newValue) -> {
+            if(!newValue){
+                minutosCierre = cmb_MinHasta_RegistroParking.getSelectionModel().getSelectedItem();
+            }
         });
 
 
