@@ -9,7 +9,7 @@
       <HBox fx:id="barra_superior" prefHeight="100.0" prefWidth="1200.0" style="-fx-background-color: skyblue;" stylesheets="@style.css" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="btn_parkings" mnemonicParsing="false" onAction="#mostrarPanelLateralParkings" prefHeight="100.0" prefWidth="200.0" stylesheets="@style.css" text="Parkings" textAlignment="CENTER" />
-            <Button fx:id="btn_parkings1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#mostrarPanelLateralParkings" prefHeight="100.0" prefWidth="200.0" stylesheets="@style.css" text="Registrar Coche" textAlignment="CENTER" />
+            <Button fx:id="btn_parkings1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#mostrarPanelCoches" prefHeight="100.0" prefWidth="200.0" stylesheets="@style.css" text="Registrar Coche" textAlignment="CENTER" />
             <Button fx:id="btn_parkings2" layoutX="210.0" layoutY="10.0" mnemonicParsing="false" onAction="#mostrarPanelLateralParkings" prefHeight="100.0" prefWidth="200.0" stylesheets="@style.css" text="Registrar Cliente" textAlignment="CENTER" />
             <Button fx:id="btn_parkings3" layoutX="410.0" layoutY="10.0" mnemonicParsing="false" onAction="#mostrarPanelLateralParkings" prefHeight="100.0" prefWidth="200.0" stylesheets="@style.css" text="Registrar Empleado" textAlignment="CENTER" />
             <Button fx:id="btn_parkings4" layoutX="610.0" layoutY="10.0" mnemonicParsing="false" onAction="#mostrarPanelLateralParkings" prefHeight="100.0" prefWidth="200.0" stylesheets="@style.css" text="Alquiler Coche" textAlignment="CENTER" />
