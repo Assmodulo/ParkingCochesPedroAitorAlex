@@ -202,7 +202,16 @@ public class RegistroParkingsController implements Initializable {
         input_capacidad_registroParkings.focusedProperty().addListener((observable, oldValue, newValue) -> {
 
             if(!newValue){
+<<<<<<< HEAD
                 
+=======
+                try{
+                    setCapacidad(Integer.parseInt(input_capacidad_registroParkings.getText()));
+                }catch(NumberFormatException e){
+                    input_capacidad_registroParkings.setText("");
+                    input_capacidad_registroParkings.setPromptText("Debe de introducir un número");
+                }
+>>>>>>> 4f036a8f1e410ffa80e1e829df1c5ba72fef0911
             }
 
         });
