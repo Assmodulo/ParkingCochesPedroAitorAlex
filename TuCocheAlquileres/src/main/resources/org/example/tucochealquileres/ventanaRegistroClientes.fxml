@@ -45,21 +45,21 @@
                         <Label fx:id="lbl_validacionDireccion" prefHeight="25.0" prefWidth="25.0" />
                     </children>
                 </HBox>
-            <HBox fx:id="hbox_telefonoClientes" alignment="CENTER" prefHeight="42.0" prefWidth="800.0">
-               <children>
-                  <Label fx:id="lbl_telefono_registroClientes" prefHeight="50.0" prefWidth="200.0" text="Telefono">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <TextField fx:id="input_telefono_registroClientes" prefHeight="50.0" prefWidth="400.0" promptText="Indique su telefono">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </TextField>
-                  <Label fx:id="lbl_validacionCapacidad2" prefHeight="25.0" prefWidth="25.0" />
-               </children>
-            </HBox>
+                <HBox fx:id="hbox_telefonoClientes" alignment="CENTER" prefHeight="42.0" prefWidth="800.0">
+                    <children>
+                        <Label fx:id="lbl_telefono_registroClientes" prefHeight="50.0" prefWidth="200.0" text="Telefono">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="input_telefono_registroClientes" prefHeight="50.0" prefWidth="400.0" promptText="Indique su telefono">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </TextField>
+                        <Label fx:id="lbl_validacionCapacidad2" prefHeight="25.0" prefWidth="25.0" />
+                    </children>
+                </HBox>
                 <HBox fx:id="hbox_dniClientes" alignment="CENTER" layoutX="10.0" layoutY="310.0" prefHeight="42.0" prefWidth="800.0">
                     <children>
                         <Label fx:id="lbl_dni_registroClientes" prefHeight="50.0" prefWidth="200.0" text="Dni">
@@ -109,49 +109,49 @@
                         <Label fx:id="lbl_validacionCapacidad" prefHeight="25.0" prefWidth="25.0" />
                     </children>
                 </HBox>
-            <HBox fx:id="hbox_cpClientes" alignment="CENTER" layoutX="10.0" layoutY="303.0" prefHeight="42.0" prefWidth="800.0">
-               <children>
-                  <Label fx:id="lbl_cp_registroClientes" prefHeight="50.0" prefWidth="200.0" text="Codigo Postal">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <TextField fx:id="input_cp_registroClientes" prefHeight="50.0" prefWidth="400.0" promptText="Indique su codigo postal">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </TextField>
-                  <Label fx:id="lbl_validacionCapacidad3" prefHeight="25.0" prefWidth="25.0" />
-               </children>
-            </HBox>
-            <HBox fx:id="hbox_direccionClientes" alignment="CENTER" prefHeight="37.0" prefWidth="800.0">
-               <children>
-                  <Label fx:id="lbl_direccion_registroClientes" prefHeight="50.0" prefWidth="200.0" text="Dirección">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <TextField fx:id="input_direccion_registroClientes" prefHeight="32.0" prefWidth="400.0" promptText="Indique su dirección">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </TextField>
-                  <Label fx:id="lbl_validacionCapacidad1" prefHeight="25.0" prefWidth="25.0" />
-               </children>
-            </HBox>
+                <HBox fx:id="hbox_cpClientes" alignment="CENTER" layoutX="10.0" layoutY="303.0" prefHeight="42.0" prefWidth="800.0">
+                    <children>
+                        <Label fx:id="lbl_cp_registroClientes" prefHeight="50.0" prefWidth="200.0" text="Codigo Postal">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="input_cp_registroClientes" prefHeight="50.0" prefWidth="400.0" promptText="Indique su codigo postal">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </TextField>
+                        <Label fx:id="lbl_validacionCapacidad3" prefHeight="25.0" prefWidth="25.0" />
+                    </children>
+                </HBox>
+                <HBox fx:id="hbox_direccionClientes" alignment="CENTER" prefHeight="37.0" prefWidth="800.0">
+                    <children>
+                        <Label fx:id="lbl_direccion_registroClientes" prefHeight="50.0" prefWidth="200.0" text="Dirección">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="input_direccion_registroClientes" prefHeight="32.0" prefWidth="400.0" promptText="Indique su dirección">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </TextField>
+                        <Label fx:id="lbl_validacionCapacidad1" prefHeight="25.0" prefWidth="25.0" />
+                    </children>
+                </HBox>
                 <HBox fx:id="hbox_horarios_RegistroParking" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                     <children>
                         <HBox fx:id="registroFNacimiento_RegistroClientes" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="1032.0">
                             <children>
-                              <Label fx:id="lbl_fechaNacimiento_RegistroClientes" alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="302.0" text="Fecha de Nacimiento" textAlignment="CENTER">
-                                  <font>
-                                      <Font size="22.0" />
-                                  </font>
-                                  <HBox.margin>
-                                      <Insets right="50.0" />
-                                  </HBox.margin>
-                              </Label>
-                        <DatePicker fx:id="DatePicker_FechaNacimiento_registroClientes" prefHeight="35.0" prefWidth="316.0" />
+                                <Label fx:id="lbl_fechaNacimiento_RegistroClientes" alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="302.0" text="Fecha de Nacimiento" textAlignment="CENTER">
+                                    <font>
+                                        <Font size="22.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets right="50.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <DatePicker fx:id="DatePicker_FechaNacimiento_registroClientes" prefHeight="35.0" prefWidth="316.0" />
                             </children>
                             <HBox.margin>
                                 <Insets right="50.0" />
